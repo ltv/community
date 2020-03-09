@@ -1,4 +1,4 @@
-# Moleculer Boilerplate for Typescript Projects
+# LTV Community Project
 
 A Comprehensive Boilerplate for NodeJS micro-services project with `moleculerjs`.
 
