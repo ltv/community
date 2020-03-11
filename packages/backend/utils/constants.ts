@@ -26,6 +26,7 @@ export const VALIDATION_ERROR = 'VALIDATION_ERROR';
 
 // SCHEMA NAME (S)
 export const SCHEMA_AUTH = 'auth';
+export const SCHEMA_ADM = 'adm';
 
 // TABLE NAME (S)
 export const AUTH_USR = 'AUTH_USR';

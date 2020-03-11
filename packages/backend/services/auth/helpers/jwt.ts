@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import jwt from 'jsonwebtoken';
+import jwt, { SignOptions } from 'jsonwebtoken';
 import jwksRsa from 'jwks-rsa';
 
 import { UnauthorizedError } from './errors';
@@ -26,15 +26,10 @@ export function generateToken(type: string, payload: { [key: string]: any }, exp
     : path.resolve(ROOT_PATH, JWT_PRIVATE_KEY_PATH);
   const privateKEY = fs.readFileSync(keyPath, 'utf8');
 
-  // TODO: Change this later
-  const baseOpts = {
+  const signOptions: SignOptions = {
     issuer: 'LTV Co., Ltd',
     subject: 'admin@ltv.vn',
     audience: 'https://ltv.vn',
-  };
-
-  const signOptions = {
-    ...baseOpts,
     expiresIn,
     algorithm: 'RS256',
   };
