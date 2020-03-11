@@ -18,7 +18,7 @@
       "services/*": ["services/*"],
       "tests/*": ["tests/*"]
     },
-    "typeRoots": ["node_modules/@types", "node_modules/@app/types"],
+    "typeRoots": ["node_modules/@types", "node_modules/@app/types", "services/@types"],
     "lib": [
       "es5",
       "es6",
