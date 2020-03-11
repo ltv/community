@@ -10,6 +10,9 @@
     "start:prod": "moleculer-runner --env services --mask **/*.service.js --config moleculer.config.js"
   },
   "dependencies": {
+    "@types/lodash.pick": "^4.4.6",
+    "@types/pg": "^7.14.2",
+    "@types/pg-pool": "^2.0.2",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "graphql": "^14.6.0",
@@ -24,9 +27,11 @@
     "lodash.pick": "^4.4.0",
     "moleculer": "^0.14.0",
     "moleculer-apollo-server": "^0.2.0",
+    "moleculer-db-knex": "^0.1.10",
     "moleculer-web": "^0.9.0",
     "nats": "^1.4.0",
-    "pg": "^7.18.1"
+    "pg": "^7.18.2",
+    "urlencode": "^1.1.0"
   },
   "devDependencies": {
     "@app/models": "*",
